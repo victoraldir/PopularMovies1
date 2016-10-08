@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_list_movies"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quartzo.popularmovies1.MovieGridFragment"
+    tools:showIn="@layout/activity_list_movies">
+
+    <GridView
+        android:id="@+id/fragment_list_movies_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:numColumns="@integer/num_cols" />
+
+</FrameLayout>

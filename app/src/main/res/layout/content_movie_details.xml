@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.quartzo.popularmovies1.MovieDetailsActivity"
+    tools:showIn="@layout/activity_movie_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detail_imageview_poster"
+                android:layout_width="@dimen/details_width_poster"
+                android:layout_height="@dimen/details_height_poster"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/plot_of_the_movie"
+                android:src="@drawable/error" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detail_textview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagu: The history of a monkey"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/detail_textview_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center|center_horizontal"
+                    android:text="4.1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display3"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/detail_textview_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Release Date"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_overview"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/detail_textview_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="@string/large_text"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
